@@ -3,11 +3,9 @@
 #### 介绍
 一个用于将大文件切割成多份小文件的命令行工具
 
-#### 安装教程
+#### 下载
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+可以前往[发行页面|https://gitee.com/lifeonwalden/big_file_splitter/releases]下载最新版本，目前仅支持windows.
 
 #### 使用说明
 
