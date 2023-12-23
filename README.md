@@ -27,3 +27,24 @@ merge : 加上该参数则为合并文件
 
 --size : 每个切分后文件最大的大小。如切割单位为行，则该参数指行数；如切割单位为大小，则该参数指字节数。支持k,m,g后缀。k=1024, m=1024*1024, g=1024*1024*1024
 ```
+
+#### 示例
+
+##### 将拥有260行的目标文件(c:\test.txt)切割成最多包含128行的小文件
+```
+big_file_splitter --target=c:\test --size=128
+```
+命令执行后，原目录下将出现三个新文件：c:\test.txt_0 , c:\test.txt_1 , c:\test.txt_2
+
+
+##### 将拥有260M的目标文件(c:\test.txt)切割成最多包含128M的小文件
+```
+big_file_splitter --target=c:\test --type=size --size=128M
+```
+命令执行后，原目录下将出现三个新文件：c:\test.txt_0 , c:\test.txt_1 , c:\test.txt_2
+
+##### 合并文件（假设有切割后的三个子文件：c:\test.txt_0 , c:\test.txt_1 , c:\test.txt_2）
+```
+big_file_splitter --target=c:\test.txt_0
+```
+命令执行后，原目录将出现合并的新文件：c:\test.txt
