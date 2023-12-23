@@ -5,7 +5,7 @@
 
 #### 下载
 
-可以前往[发行页面|https://gitee.com/lifeonwalden/big_file_splitter/releases]下载最新版本，目前仅支持windows.
+可以前往[发行页面](https://gitee.com/lifeonwalden/big_file_splitter/releases)下载最新版本，目前仅支持windows.
 
 #### 使用说明
 
