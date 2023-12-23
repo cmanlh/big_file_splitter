@@ -9,23 +9,21 @@
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 切割文件
 
-#### 参与贡献
+```
+big_file_splitter --target=${path_to_file}
+```
+命令执行后，文件将按照默认设置，以行为单位，切割成每个文件包含1024行的多个小文件
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+##### 参数说明
 
+```
+merge : 加上该参数则为合并文件
 
-#### 特技
+--target : 切割或者合并的目标文件的路径
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+--type : 切割单位， 可选值为：line(按照行切割，默认)；size(按照数据大小)
+
+--size : 每个切分后文件最大的大小。如切割单位为行，则该参数指行数；如切割单位为大小，则该参数指字节数。支持k,m,g后缀。k=1024, m=1024*1024, g=1024*1024*1024
+```
